@@ -42,9 +42,10 @@ export default function BuscaProduto({ busca, setBusca }) {
       {mensagem && <p style={{ marginTop: '1rem', color: '#f1c40f' }}>{mensagem}</p>}
 
       {/* Resultados */}
-      {resultados.map(produto => (
-        <div key={produto.id} className="resultado-card">
-          <p><strong>📦 Nome:</strong> {produto.nome || '—'}</p>
+      {produtos.map(produto => (
+  <div key={produto.id} className="card">
+          <p><strong>Nome:</strong> {produto.nome}</p>
+          <p><strong>Descrição:</strong> {produto.descricao || '—'}</p>
           <p><strong>🏷️ Categoria:</strong> {produto.categoria || '—'}</p>
           <p><strong>🚚 Fornecedor:</strong> {produto.fornecedor || '—'}</p>
           <p><strong>💰 Compra:</strong> R$ {produto.custo?.toFixed(2) || '—'}</p>
