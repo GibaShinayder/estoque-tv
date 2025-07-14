@@ -42,7 +42,7 @@ export default function BuscaProduto({ busca, setBusca }) {
       {mensagem && <p style={{ marginTop: '1rem', color: '#f1c40f' }}>{mensagem}</p>}
 
       {/* Resultados */}
-      {produtos.map(produto => (
+      {resultados.map(produto => (
   <div key={produto.id} className="card">
           <p><strong>Nome:</strong> {produto.nome}</p>
           <p><strong>🏷️ Categoria:</strong> {produto.categoria || '—'}</p>
