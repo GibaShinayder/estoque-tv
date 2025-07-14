@@ -43,8 +43,8 @@ export default function BuscaProduto({ busca, setBusca }) {
 
       {/* Resultados */}
       {resultados.map(produto => (
-  <div key={produto.id} className="card">
-          <p><strong>Nome:</strong> {produto.nome}</p>
+        <div key={produto.id} className="resultado-card">
+          <p><strong>📦 Nome:</strong> {produto.nome || '—'}</p>
           <p><strong>🏷️ Categoria:</strong> {produto.categoria || '—'}</p>
           <p><strong>🚚 Fornecedor:</strong> {produto.fornecedor || '—'}</p>
           <p><strong>💰 Compra:</strong> R$ {produto.custo?.toFixed(2) || '—'}</p>
