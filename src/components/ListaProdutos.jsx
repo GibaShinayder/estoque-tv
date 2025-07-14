@@ -20,7 +20,6 @@ function ListaProdutos({ produtos, busca, excluirProduto }) {
               <p><strong>📈 Lucro:</strong> R$ {p.margem_lucro} ({p.margem_percentual}%)</p>
               <p><strong>🔢 Quantidade:</strong> {p.quantidade}</p>
               <p><strong>⏳ Validade:</strong> {p.data_validade}</p>
-              <p><strong>📝 Descrição:</strong> {produto.descricao || '—'}</p>
               <p><strong>👤 Funcionário:</strong> {p.usuario}</p>
               <button onClick={() => excluirProduto(p.id)} className="login-button">Excluir</button>
             </div>
