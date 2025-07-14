@@ -1,6 +1,5 @@
 import { useState, useEffect } from 'react';
 import { supabase } from '../supabaseClient';
-import ListaProdutos from './components/ListaProdutos';
 
 export default function ListaProdutos() {
   const [produtos, setProdutos] = useState([]);
