@@ -49,8 +49,6 @@ export default function BuscaProduto({ busca, setBusca }) {
           <p><strong>🚚 Fornecedor:</strong> {produto.fornecedor || '—'}</p>
           <p><strong>💰 Compra:</strong> R$ {produto.custo?.toFixed(2) || '—'}</p>
           <p><strong>💸 Venda:</strong> R$ {produto.preco?.toFixed(2) || '—'}</p>
-          <p><strong>📝 Descrição:</strong> {produto.descricao || '—'}</p>
-
           <p>
             <strong>📈 Lucro:</strong>{' '}
             {produto.margem_lucro
