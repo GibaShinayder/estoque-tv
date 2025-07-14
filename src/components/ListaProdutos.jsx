@@ -13,9 +13,19 @@ function ListaProdutos({ produtos, busca, excluirProduto }) {
           {produtosFiltrados.map(p => (
             <div key={p.id} className="produto-item">
               <p><strong>📦 Nome:</strong> {p.nome}</p>
+              <p
+                   style={{
+                    color:
+                  p?.descricao?.toLowerCase().includes('incompleto')
+                  ? 'red'
+                  : p?.descricao?.toLowerCase().includes('completa')
+                  ? 'green'
+                  : '#000'
+  }}
+>
+                <strong>📝 Descrição: {p?.descricao || '—'}</strong></p>
               <p><strong>🏷️ Categoria:</strong> {p.categoria}</p>
               <p><strong>🚚 Fornecedor:</strong> {p.fornecedor}</p>
-              <p><strong>💰 Compra:</strong> R$ {p.preco_compra}</p>
               <p><strong>💸 Venda:</strong> R$ {p.preco_venda}</p>
               <p><strong>📈 Lucro:</strong> R$ {p.margem_lucro} ({p.margem_percentual}%)</p>
               <p><strong>🔢 Quantidade:</strong> {p.quantidade}</p>
