@@ -48,7 +48,7 @@ export default function BuscaProduto({ busca, setBusca }) {
           <p
             style={{
             color:
-            produto?.descricao?.toLowerCase().includes('incompleto')
+            produto?.descricao?.toLowerCase().includes('incompleta')
             ? 'red'
             : produto?.descricao?.toLowerCase().includes('completa')
             ? 'green'
