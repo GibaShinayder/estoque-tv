@@ -20,7 +20,7 @@ body {
   display: flex;
   flex-direction: column;
   gap: 2rem;
-  align-items: left;
+  align-items: center;
 }
 
 .login-box {
