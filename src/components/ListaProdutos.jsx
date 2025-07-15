@@ -16,7 +16,7 @@ function ListaProdutos({ produtos, busca, excluirProduto }) {
               <p
                    style={{
                     color:
-                  p?.descricao?.toLowerCase().includes('incompleto')
+                  p?.descricao?.toLowerCase().includes('incompleta')
                   ? 'red'
                   : p?.descricao?.toLowerCase().includes('completa')
                   ? 'green'
